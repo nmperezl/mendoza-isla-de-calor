@@ -1,3 +1,5 @@
+*Dos experimentos** para analizar la **isla de calor urbana en Mendoza** usando **Google Earth Engine**
+
 # Isla de Calor - Mendoza AMM (Landsat 8 - 30m)
 
 Aplicación para analizar la **isla de calor urbana de Mendoza** usando **Google Earth Engine**.
@@ -44,7 +46,7 @@ La app interactiva se puede ver aquí:
 
 
 
-## Isla de Frescura Urbana – Mendoza (Sentinel‑2, 10 m)
+## Frescura Urbana – Mendoza (Sentinel‑2, 10 m)
 
 Aplicación para analizar un **proxy de isla de calor urbana** en Mendoza usando **Sentinel‑2** y **Google Earth Engine**, con mayor resolución espacial que Landsat (10 m).  
 
