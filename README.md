@@ -1,4 +1,4 @@
-# Isla de Calor - Mendoza AMM
+# Isla de Calor - Mendoza AMM (Landsat 8 - 30m)
 
 Aplicación para analizar la **isla de calor urbana de Mendoza** usando **Google Earth Engine**.
 
@@ -40,3 +40,49 @@ Aplicación para analizar la **isla de calor urbana de Mendoza** usando **Google
 
 La app interactiva se puede ver aquí:  
 [Mendoza Isla de Calor](https://ee-naperez817.projects.earthengine.app/view/mendoza-isla-de-calor)
+
+
+
+
+## Isla de Frescura Urbana – Mendoza (Sentinel‑2, 10 m)
+
+Aplicación para analizar un **proxy de isla de calor urbana** en Mendoza usando **Sentinel‑2** y **Google Earth Engine**, con mayor resolución espacial que Landsat (10 m).  
+
+🔗 **App interactiva:** [Mendoza – Frescura Urbana (Sentinel‑2)](https://ee-naperez817.projects.earthengine.app/view/mendoza---isla-de-calor-sentinel-2--10m)
+
+---
+
+## 🛰️ Datos utilizados
+
+- **Satélite:** Sentinel‑2 (S2_SR_HARMONIZED)  
+- **Periodo de análisis:** 1 de enero → 31 de marzo 2024  
+- **Área de estudio:** Mendoza, Argentina (±15 km del centro)  
+- **Selección de imagen:** La imagen menos nublada (<20 % nubes)  
+- **Resolución espacial:** 10 m para bandas ópticas
+- **Nota:** Sentinel‑2 no mide temperatura directa; se calculan **índices de frescura urbana** para interpretar el calor de superficie.
+
+---
+
+## Capas y análisis
+
+1. **NDVI – Vegetación**  
+   - Indica salud de la vegetación (mayor valor = más vegetación)  
+   - Verde oscuro = vegetación sana  
+   - Amarillo = vegetación débil  
+   - Blanco = urbano / suelo
+
+2. **NDWI – Humedad / Agua**  
+   - Indica presencia de agua en superficie y humedad del suelo  
+
+3. **NDBI – Superficies edificadas**  
+   - Indica áreas urbanas y construidas  
+
+4. **Índice de frescura**  
+   - Combina vegetación + agua – áreas edificadas  
+   - Alto valor → más fresco  
+   - Bajo valor → más caliente
+
+5. **Hotspots urbanos**  
+   - Zonas urbanas con **bajo indice de frescura**, identificando los sectores más “calientes”  
+
+
